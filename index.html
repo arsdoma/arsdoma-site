@@ -1,295 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ARSDOMA – Relational System Design for Human Development</title>
-
-<meta name="description" content="ARSDOMA is a research initiative on relational system design for human development, founded by clinical psychologist András Bódis.">
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "ResearchProject",
- "name": "ARSDOMA",
- "description": "Relational system design framework for human development and educational environments.",
- "founder": [
-  {
-   "@type": "Person",
-   "name": "András Bódis",
-   "jobTitle": "Clinical Psychologist"
-  },
-  {
-   "@type": "Person",
-   "name": "Domonkos Katalin",
-   "jobTitle": "Educational Researcher and Practising Teacher"
-  }
- ],
- "url": "https://arsdoma.net",
- "sameAs": [
-  "https://www.linkedin.com/in/andr%C3%A1s-b%C3%B3dis-30696026/"
- ]
-}
-</script>
-
-<style>
-
-*{
-box-sizing:border-box;
-}
-
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#f5f3ee;
-color:#1f1f1f;
-line-height:1.6;
-}
-
-.container{
-max-width:980px;
-margin:auto;
-padding:48px 24px 64px;
-}
-
-.card{
-background:#fbfaf7;
-border-radius:22px;
-padding:42px 48px;
-margin-bottom:28px;
-box-shadow:0 0 0 1px rgba(0,0,0,0.03);
-}
-
-.eyebrow{
-font-size:14px;
-letter-spacing:0.08em;
-text-transform:uppercase;
-color:#4a4a4a;
-margin-bottom:10px;
-font-weight:600;
-}
-
-.subheading{
-font-size:18px;
-color:#4f4f4f;
-margin:0 0 18px 0;
-}
-
-h1{
-font-size:64px;
-line-height:1.05;
-margin:0 0 24px 0;
-font-weight:700;
-letter-spacing:-0.02em;
-}
-
-h2{
-font-size:24px;
-line-height:1.2;
-margin:0 0 22px 0;
-font-weight:700;
-}
-
-p{
-font-size:17px;
-margin:0 0 18px 0;
-color:#2f2f2f;
-}
-
-p:last-child{
-margin-bottom:0;
-}
-
-.founder-name{
-font-size:18px;
-font-weight:700;
-margin-bottom:6px;
-}
-
-.founder-role,
-.founder-title{
-font-size:17px;
-margin-bottom:4px;
-color:#2f2f2f;
-}
-
-.contact-intro{
-margin-bottom:22px;
-}
-
-.contact-item{
-margin-bottom:18px;
-}
-
-.contact-label{
-font-size:14px;
-text-transform:uppercase;
-letter-spacing:0.08em;
-color:#5b5b5b;
-font-weight:700;
-margin-bottom:6px;
-}
-
-a{
-color:#1f1f1f;
-text-decoration:underline;
-text-underline-offset:2px;
-}
-
-a:hover{
-opacity:0.75;
-}
-
-footer{
-text-align:center;
-font-size:15px;
-color:#5a5a5a;
-margin-top:8px;
-}
-
-@media (max-width:768px){
-
-.container{
-padding:28px 16px 44px;
-}
-
-.card{
-padding:28px 22px;
-border-radius:18px;
-}
-
-h1{
-font-size:42px;
-}
-
-h2{
-font-size:22px;
-}
-
-p,
-.founder-role,
-.founder-title{
-font-size:16px;
-}
-
-}
-
-</style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ARSDOMA — Relational System Design for Human Development</title>
+  <meta name="description" content="ARSDOMA is a theoretical and research framework for understanding and designing relational systems that support human development.">
+  <link rel="canonical" href="https://arsdoma.org/">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="ARSDOMA">
+  <meta property="og:title" content="ARSDOMA — Relational System Design for Human Development">
+  <meta property="og:description" content="A theoretical and research framework for relational systems that support human development.">
+  <meta property="og:url" content="https://arsdoma.org/"><meta property="og:image" content="https://arsdoma.org/og.png">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ARSDOMA — Relational System Design for Human Development">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ARSDOMA — Relational System Design for Human Development"><meta name="twitter:description" content="A theoretical and research framework for relational systems that support human development."><meta name="twitter:image" content="https://arsdoma.org/og.png">
+  <meta name="theme-color" content="#173f35"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ResearchProject","name":"ARSDOMA","alternateName":"Relational System Design for Human Development","description":"A theoretical and research framework for understanding and designing relational systems that support human development.","url":"https://arsdoma.org/","founder":[{"@type":"Person","name":"András Bódis","jobTitle":"Clinical Psychologist","sameAs":"https://www.linkedin.com/in/andr%C3%A1s-b%C3%B3dis-30696026/"},{"@type":"Person","name":"Dr. Katalin Domonkos","jobTitle":"Educator","sameAs":"https://www.linkedin.com/in/drdomonkoskatalin/"}]}</script>
 </head>
-
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="nav-wrap"><a class="wordmark" href="#top" aria-label="ARSDOMA home">ARSDOMA</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true"></span></button><nav id="site-nav" aria-label="Primary navigation"><a href="#framework">Framework</a><a href="#relational-safety">Relational Safety</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#people">People</a><a href="#collaboration">Collaboration</a><a class="external" href="https://arsdoma.hu/">ARSDOMA.hu <span class="external-arrow" aria-hidden="true"></span></a></nav></div></header>
+<main id="main-content">
+<section class="hero" id="top" aria-labelledby="hero-title"><div class="shell hero-grid"><div><p class="eyebrow light">Relational systems · human development</p><h1 id="hero-title"><span>ARSDOMA</span>Relational System Design for Human Development</h1><div class="hero-intro"><p>ARSDOMA is a theoretical and research framework for understanding and designing relational systems that support human development.</p><p><strong>Development takes place within the individual.</strong><br>Relational systems shape the conditions under which that development can unfold.</p></div><blockquote>What conditions must the surrounding system create for development to become possible?</blockquote><div class="actions"><a class="button" href="#framework">Explore the framework</a><a href="#research">Research &amp; Publications ↓</a></div></div><div class="relational-graphic" aria-hidden="true"><i></i><i></i><i></i><span>individual</span><span>relationship</span><span>system</span></div></div><div class="shell status"><i></i><p>ARSDOMA is currently being developed through theoretical work, scientific research and the preparation of applied institutional collaboration.</p></div></section>
 
-<main class="container">
+<section class="section paper" id="framework" aria-labelledby="framework-title"><div class="shell"><header class="section-head"><p class="eyebrow">01 · Framework</p><h2 id="framework-title">Three core propositions</h2></header><div class="three cards"><article><b>01</b><h3>Development occurs in the individual.</h3><p>Development cannot be externally produced. It unfolds through the individual’s own experience, meaning-making, regulation, relationships, exploration and engagement with reality.</p></article><article><b>02</b><h3>The relational system creates the conditions.</h3><p>No individual develops in isolation. Family members, educators, peers, professionals, institutions and communities together form a relational field that may support, constrain or destabilise developmental processes.</p></article><article><b>03</b><h3>These conditions are initially carried by others.</h3><p>Many capacities that later become increasingly internal — including regulation, safety, trust, reflection and autonomous action — first emerge within relationships.</p></article></div><p class="statement">The individual develops.<br><em>The system is responsible for the conditions.</em></p></div></section>
 
-<section class="card">
+<section class="section" id="relational-safety" aria-labelledby="safety-title"><div class="shell split"><header class="section-head"><p class="eyebrow">02 · Relational safety</p><h2 id="safety-title">The zeroth condition of development</h2></header><div class="content"><p class="question">How can I become safe for the other?</p><p class="lead">Relational safety cannot simply be declared by a person, programme or institution. It is experienced within the relationship and therefore must remain responsive to the concrete individual.</p><p>This shifts attention from abstract intention to lived relational experience: whether connection, participation and development can become possible for this person, in this relationship, in this context.</p><blockquote class="pull">Safety is not what the system claims to provide. It is what becomes possible in the relationship.</blockquote></div></div></section>
 
-<div class="eyebrow">ARSDOMA</div>
-<p class="subheading">A research initiative on relational system design.</p>
+<section class="section sand" aria-labelledby="system-title"><div class="shell"><header class="section-head wide"><div><p class="eyebrow">03 · The relational system</p><h2 id="system-title">Development is never carried by one person alone</h2></div><p>ARSDOMA treats development as occurring within a network of relationships. Developmental responsibility cannot be assigned to a single teacher, parent, therapist or institution.</p></header><div class="system-map" aria-label="The individual connected with family, educators, peers, psychologists, other professionals, mentors, communities and institutions"><strong>individual</strong><ul><li>family</li><li>educators</li><li>peers</li><li>psychologists</li><li>other professionals</li><li>mentors</li><li>communities</li><li>institutions</li></ul></div><p class="statement small">When something is not working, ARSDOMA asks not only what is happening within the individual, but also what may need to change around them.</p></div></section>
 
-<h1>Relational System Design for Human Development</h1>
+<section class="section paper" aria-labelledby="learning-title"><div class="shell split"><header class="section-head"><p class="eyebrow">04 · Learning and creation</p><h2 id="learning-title">Exploration beyond reproduction</h2></header><div class="content"><p class="lead">Learning can support exploration, questioning, understanding, testing possibilities and increasingly autonomous engagement with reality.</p><p>Creation is understood broadly: as contributing something genuinely one’s own rather than merely reproducing what has already been given.</p></div></div></section>
 
-<p>A human-centered framework for designing educational and developmental environments.</p>
+<section class="section" aria-labelledby="understanding-title"><div class="shell"><header class="section-head centered"><p class="eyebrow">05 · Understanding the relational system</p><h2 id="understanding-title">How do we understand whether a system is supporting development?</h2><p>ARSDOMA considers not only declared values, methods and intentions, but also patterns of functioning and participation.</p></header><ul class="questions"><li>Can the person ask for help?</li><li>Can uncertainty be tolerated?</li><li>Can mistakes occur without loss of belonging?</li><li>Is exploration possible?</li><li>Can disagreement occur without relational collapse?</li><li>Can recovery occur after difficulty?</li><li>Can autonomy grow without loss of connection?</li></ul><aside class="note"><b>Methodological caution</b><p>Human functioning is multicausal, contextual and developmental. Observations do not provide simple causal proof about system quality.</p></aside><p class="statement small">The individual is not only someone within the system. Their functioning may also tell us something about the system.</p></div></section>
 
-<p>ARSDOMA examines how relational structures shape learning, motivation, authentic development, and sustainable mental wellbeing.</p>
+<section class="section dark" aria-labelledby="ai-title"><div class="shell split"><header class="section-head"><p class="eyebrow light">06 · Human-centred AI</p><h2 id="ai-title">Human-centred AI in relational systems</h2></header><div class="content"><p class="lead">ARSDOMA does not position AI as a replacement for parents, teachers, therapists, mentors, professional teams or human relationships.</p><p>Developmental, ethical and relational responsibility remains human.</p><div class="concept"><p class="eyebrow">A high-level concept</p><h3>Metamental support</h3><p>AI may support humans in reflecting on their own thinking, interpretations, relationships and systems without transferring relational or normative responsibility to the technology.</p><ul class="tags"><li>organising information</li><li>detecting patterns</li><li>comparing perspectives</li><li>generating alternative hypotheses</li><li>identifying blind spots</li><li>supporting professional reflection</li></ul></div><blockquote class="pull">AI does not carry development. It may help humans understand developmental conditions more accurately.</blockquote></div></div></section>
 
-</section>
+<section class="section" aria-labelledby="status-title"><div class="shell"><header class="section-head wide"><div><p class="eyebrow">07 · Current status</p><h2 id="status-title">Where ARSDOMA stands today</h2></div><div><p>ARSDOMA is a developed theoretical and professional framework that continues to evolve through conceptual work, scientific research and applied development.</p><p>Its broader institutional implementation, operationalisation and empirical investigation remain part of an ongoing research and development programme.</p></div></header><div class="three status-cards"><article><b>Theory</b><h3>Developed and continuously refined</h3></article><article><b>Research</b><h3>Ongoing</h3></article><article><b>Application</b><h3>In development</h3></article></div><aside class="note"><span aria-hidden="true"></span><p>ARSDOMA should not currently be understood as a standardised or empirically validated intervention programme.</p></aside></div></section>
 
+<section class="section paper" id="research" aria-labelledby="research-title"><div class="shell"><header class="section-head"><p class="eyebrow">08 · Research programme</p><h2 id="research-title">Current research directions</h2></header><div class="three research"><article><b>01</b><h3>Relational safety</h3><p>How does safety become possible as a lived quality of particular relationships and systems?</p></article><article><b>02</b><h3>Human development</h3><p>What surrounding conditions support regulation, meaning-making, agency and increasing autonomy?</p></article><article><b>03</b><h3>Learning and creation</h3><p>How can relational environments enable exploration, understanding and genuinely individual contribution?</p></article><article><b>04</b><h3>Relational systems</h3><p>How do networks of people, practices and institutions shape developmental possibilities?</p></article><article><b>05</b><h3>Multidisciplinary collaboration</h3><p>How can professional perspectives contribute without fragmenting responsibility for the whole system?</p></article><article><b>06</b><h3>Human-centred AI</h3><p>How might AI support reflection while relational, developmental and ethical responsibility remains human?</p></article></div></div></section>
 
+<section class="section sand" id="publications" aria-labelledby="publications-title"><div class="shell split"><header class="section-head"><p class="eyebrow">09 · Publications</p><h2 id="publications-title">Publications and research</h2></header><div class="content"><p class="lead">ARSDOMA is being developed through an ongoing programme of theoretical, conceptual and applied research. Scientific outputs will be added here as they become publicly available.</p><div class="published"><p class="eyebrow">Publications</p><p>Scientific publications related to ARSDOMA will be listed here as they become publicly available.</p></div></div></div></section>
 
-<section class="card">
+<section class="section paper" aria-labelledby="foundations-title"><div class="shell"><header class="section-head wide"><div><p class="eyebrow">10 · Theoretical foundations</p><h2 id="foundations-title">A relational and developmental perspective</h2></div><p>ARSDOMA draws on developmental psychology, relational theories, attachment research, mentalisation, phenomenological and existential approaches, psychoanalytic thinking, systems perspectives and contemporary developmental science.</p></header><p class="foundation">ARSDOMA does not simply combine these traditions. It uses them to address the system-level question of what relational conditions allow individual development to unfold while preserving both connection and increasing autonomy.</p><div class="three levels"><article><b>01</b><h3>Individual experience</h3></article><article><b>02</b><h3>Relationship</h3></article><article><b>03</b><h3>System</h3></article></div></div></section>
 
-<h2>Why ARSDOMA</h2>
+<section class="section" id="people" aria-labelledby="people-title"><div class="shell"><header class="section-head"><p class="eyebrow">11 · People</p><h2 id="people-title">The people behind ARSDOMA</h2></header><div class="people"><article><i aria-hidden="true">AB</i><div><h3>András Bódis</h3><p class="role">Founder · Clinical Psychologist</p><p>András Bódis is a clinical psychologist and the founder of ARSDOMA. His work focuses on relational safety, human development, mental health and the systemic conditions that support developmental processes.</p><a href="https://www.linkedin.com/in/andr%C3%A1s-b%C3%B3dis-30696026/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external-arrow" aria-hidden="true"></span><span class="sr-only"> (opens in a new tab)</span></a></div></article><article><i aria-hidden="true">KD</i><div><h3>Dr. Katalin Domonkos</h3><p class="role">Co-Founder · Educator</p><p>Katalin Domonkos is an educator and co-founder of ARSDOMA. Her work focuses on relational safety and supportive developmental environments in education.</p><a href="https://www.linkedin.com/in/drdomonkoskatalin/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external-arrow" aria-hidden="true"></span><span class="sr-only"> (opens in a new tab)</span></a></div></article></div></div></section>
 
-<p>Across many educational systems, increasing academic pressure coexists with rising mental health challenges among children and students.</p>
-
-<p>ARSDOMA approaches this tension as a systemic design question. Rather than treating wellbeing as an external intervention, the framework examines how the relational structure of the environment itself shapes development, learning, resilience, and long-term human flourishing.</p>
-
-</section>
-
-
-
-<section class="card">
-
-<h2>Concept</h2>
-
-<p>ARSDOMA is grounded in developmental psychology, attachment theory, and relational thinking. It proposes that the quality of the relational field surrounding learners is not secondary to education, but one of its primary structural conditions.</p>
-
-<p>In this view, relational safety is not an additional support layer around learning. It is one of the core conditions that make genuine cognitive openness, creativity, engagement, and authentic development possible.</p>
-
-</section>
-
-
-
-<section class="card">
-
-<h2>Research Direction</h2>
-
-<p>Current work explores how educational systems can be designed as good-enough systems in which relational safety, autonomy, belonging, and authentic development are structurally supported.</p>
-
-<p>ARSDOMA also investigates how mental health may be understood not as a peripheral issue in education, but as a system-level indicator of the relational quality of the learning environment.</p>
-
-</section>
-
-
-
-<section class="card">
-
-<h2>Founders</h2>
-
-<div class="founder-name">András Bódis</div>
-<div class="founder-role">Clinical Psychologist</div>
-<div class="founder-title">Founder and Concept Developer, ARSDOMA</div>
-
-<br>
-
-<div class="founder-name">Domonkos Katalin, PhD</div>
-<div class="founder-role">Educational Researcher and Practising Teacher</div>
-<div class="founder-title">Co-Founder, ARSDOMA</div>
-
-</section>
-
-
-
-<section class="card">
-
-<h2>Contact</h2>
-
-<p class="contact-intro">
-For research collaboration, academic inquiries, or partnership opportunities related to ARSDOMA:
-</p>
-
-<div class="contact-item">
-<div class="contact-label">LinkedIn</div>
-
-<a href="https://www.linkedin.com/in/andr%C3%A1s-b%C3%B3dis-30696026/" target="_blank" rel="noopener noreferrer">
-András Bódis
-</a>
-
-</div>
-
-<div class="contact-item">
-<div class="contact-label">Email</div>
-
-<a href="mailto:contact@arsdoma.org">
-contact@arsdoma.org
-</a>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-© 2026 ARSDOMA – All rights reserved.
-
-</footer>
-
+<section class="collaboration" id="collaboration" aria-labelledby="collaboration-title"><div class="shell"><p class="eyebrow light">12 · Collaboration</p><h2 id="collaboration-title">Research.<br>Dialogue.<br><em>Development.</em></h2><div class="collab-grid"><p class="lead">ARSDOMA welcomes dialogue with researchers, educators, psychologists, institutions and organisations.</p><div><article><b>01</b><h3>Research collaboration</h3></article><article><b>02</b><h3>Institutional development</h3></article><article><b>03</b><h3>Professional dialogue</h3></article></div></div><a class="contact" href="mailto:contact@arsdoma.org">contact@arsdoma.org <span class="external-arrow" aria-hidden="true"></span></a></div></section>
 </main>
-
-</body>
-</html>
+<footer><div class="shell footer-grid"><div><a class="wordmark" href="#top">ARSDOMA</a><p>Relational System Design for Human Development</p></div><p>For the Hungarian public-facing ARSDOMA site, visit <span class="footer-link-group"><a href="https://arsdoma.hu/">arsdoma.hu <span class="external-arrow" aria-hidden="true"></span></a>.</span></p><div><p>© 2026 ARSDOMA</p><a href="mailto:contact@arsdoma.org">contact@arsdoma.org</a></div></div></footer>
+</body></html>
